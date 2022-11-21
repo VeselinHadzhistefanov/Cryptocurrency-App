@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
 
                 val adapter = ViewAdapter(sortedCurrencies)
                 binding.cryptoCurrenciesList.adapter = adapter
-                binding.cryptoCurrenciesCount.text = "Number of currencies shown: ${adapter.itemCount.toString()}"
+                binding.cryptoCurrenciesCount.text = "Currencies shown: ${adapter.itemCount.toString()}"
             }
 
             override fun onFailure(call: Call<List<CryptoCurrency>>, t: Throwable) {
