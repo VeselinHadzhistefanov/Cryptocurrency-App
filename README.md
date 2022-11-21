@@ -1,4 +1,4 @@
-A app that can be used to show cryptocurrencies
+A app thatcan show info about cryptocurrencies
 
 Preview:
 
