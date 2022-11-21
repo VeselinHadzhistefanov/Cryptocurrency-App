@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="name" type="String"/>
+        <variable name="symbol" type="String"/>
+        <variable name="icon_url" type="String" />
+        <variable name="current_price" type="String"/>
+        <variable name="market_cap" type="String"/>
+        <variable name="high_24h" type="String"/>
+        <variable name="price_change_24h" type="String"/>
+        <variable name="market_cap_change_percentage_24h" type="String"/>
+        <variable name="low_24h" type="String"/>
+    </data>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/currency_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@android:drawable/btn_star"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@id/currency_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="20sp"
+            android:text="@{name}"
+            tools:text="Currency Name"/>
+
+        <TextView
+            android:id="@+id/tv_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@id/currency_icon"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            android:textSize="20sp"
+            android:text="@{symbol}"
+            tools:text="Currency Symbol"/>
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@id/currency_icon"
+            app:layout_constraintTop_toBottomOf="@id/tv_symbol"
+            android:textSize="20sp"
+            android:text="@{current_price}"
+            tools:text="Currency Symbol"/>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
