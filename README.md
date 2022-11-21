@@ -1,5 +1,4 @@
-# CryptocurrencyList
-A demo app that lists cryprocurrencies
+A app that can be used to shwo cryptocurrencies
 
 Preview:
 
